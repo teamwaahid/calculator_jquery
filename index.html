@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Wahid Hasan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    
+    <h1>Calculator</h1>
+
+    <div class="card">
+
+        <div class="calc-head">
+            <div id="result" maxlength="10"></div>
+        </div>
+
+        <div class="calc-body">
+
+            <div>
+                <input type="button" value="C" class="btn" onclick="clearResult()">
+                <input type="button" value="DEL" class="btn" onclick="insertNumber(DEL)">
+                <input type="button" value="%" class="btn" onclick="insertNumber('%')">
+                <input type="button" value="÷" class="btn side-btn" onclick="insertNumber('/')">
+            </div>
+
+            <div>
+                <input type="button" value="1" class="btn" onclick="insertNumber(1)">
+                <input type="button" value="2" class="btn" onclick="insertNumber(2)">
+                <input type="button" value="3" class="btn" onclick="insertNumber(3)">
+                <input type="button" value="X" class="btn side-btn" onclick="insertNumber('*')">
+            </div>
+
+            <div>
+                <input type="button" value="4" class="btn" onclick="insertNumber(4)">
+                <input type="button" value="5" class="btn" onclick="insertNumber(5)">
+                <input type="button" value="6" class="btn" onclick="insertNumber(6)">
+                <input type="button" value="-" class="btn side-btn" onclick="insertNumber('-')">
+            </div>  
+           
+            <div>
+                <input type="button" value="7" class="btn" onclick="insertNumber(7)">
+                <input type="button" value="8" class="btn" onclick="insertNumber(8)">
+                <input type="button" value="9" class="btn" onclick="insertNumber(9)">
+                <input type="button" value="+" class="btn side-btn" onclick="insertNumber('+')">
+            </div>
+
+            <div>
+                <input type="button" value="." class="btn" onclick="insertNumber('.')">
+                <input type="button" value="0" class="btn" onclick="insertNumber(0)">
+                <input type="button" value="=" class="btn" onclick="insertNumber('=')" style="background-color: orange; width: 174px;">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
